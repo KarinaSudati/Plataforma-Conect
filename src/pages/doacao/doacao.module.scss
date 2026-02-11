@@ -1,0 +1,46 @@
+.doacaoPage {
+  display: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff;
+
+  h1 {
+    color: #2b5a9a;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #122f97;
+    text-align: center;
+    margin-bottom: 30px;
+    min-width: 80px;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+}
+
+.containerCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

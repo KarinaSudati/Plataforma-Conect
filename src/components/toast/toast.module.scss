@@ -1,0 +1,53 @@
+.toastContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px (0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 9999;
+  animation: slideIn 0.5s ease-out;
+
+  .icone {
+    width: 24px;
+    height: 24px;
+  }
+
+  .texto p {
+    margin: 0;
+    color: #555;
+    font-weight: 500;
+  }
+
+  .barraProgresso {
+    height: 3px;
+    background: #ccc;
+    margin-top: 8px;
+    width: 100%;
+    animation: progress 3s linear forwards;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
